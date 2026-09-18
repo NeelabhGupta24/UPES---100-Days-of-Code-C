@@ -1,32 +1,57 @@
-//Q78: Find the sum of main diagonal elements for a square matrix.
+//Q80: Multiply two matrices.
 
 /*
 Sample Test Cases:
 Input 1:
-3 3
+2 3
 1 2 3
 4 5 6
-7 8 9
+3 2
+7 8
+9 10
+11 12
 Output 1:
-15
+58 64
+139 154
 
 */
 #include <stdio.h>
 
 int main() {
-    int r, c, sum = 0;
-    scanf("%d %d", &r, &c);
-
-    int a[r][c];
-
-    for (int i = 0; i < r; i++)
-        for (int j = 0; j < c; j++)
+    int r1, c1, r2, c2;
+    scanf("%d %d", &r1, &c1);
+    
+    int a[10][10], b[10][10], c[10][10];
+    
+    for(int i = 0; i < r1; i++) {
+        for(int j = 0; j < c1; j++) {
             scanf("%d", &a[i][j]);
-
-    for (int i = 0; i < r; i++)
-        sum += a[i][i];
-
-    printf("%d", sum);
-
+        }
+    }
+    
+    scanf("%d %d", &r2, &c2);
+    
+    for(int i = 0; i < r2; i++) {
+        for(int j = 0; j < c2; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+    
+    for(int i = 0; i < r1; i++) {
+        for(int j = 0; j < c2; j++) {
+            c[i][j] = 0;
+            for(int k = 0; k < c1; k++) {
+                c[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+    
+    for(int i = 0; i < r1; i++) {
+        for(int j = 0; j < c2; j++) {
+            printf("%d ", c[i][j]);
+        }
+        printf("\n");
+    }
+    
     return 0;
 }
