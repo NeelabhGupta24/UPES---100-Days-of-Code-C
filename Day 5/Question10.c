@@ -14,14 +14,15 @@ Output 2:
 
 */
 #include <stdio.h>
-
 int main(){
-    int time_input;
+    int time_input = 0; //Input variable
     printf("Enter time in seconds :");
-    scanf("%d",&time_input);
+    scanf("%d",&time_input); // Taking input
+    //Calculating Hours minutes and seconds
     int hours = time_input/3600;
     int minutes = (time_input - hours*3600)/60;
     int seconds = time_input - ((minutes*60) + (hours*3600));
-    printf("%d:%d:%d\n",hours,minutes,seconds);
+    printf("%d:%d:%d\n",hours,minutes,seconds);//Display result
+    
     return 0;
 }
