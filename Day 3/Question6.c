@@ -22,5 +22,6 @@ int main(){
     secondNumber = firstNumber; // Switching values
     firstNumber = temporaryNumber;
     printf("After Swap :%d %d",firstNumber,secondNumber); // Displaying result
+    
     return 0;
 }
