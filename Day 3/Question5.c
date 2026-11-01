@@ -14,13 +14,11 @@ Fahrenheit=212
 
 */
 #include <stdio.h>
-
 int main(){
-    float farenheit;
-    float celcius;
+    float farenheit = 0.0f, celcius = 0.0f; //Storing Variables
     printf("Enter Temperature in Celcius :");
-    scanf("%f",&celcius);
-    farenheit = (celcius*1.8) + 32;
-    printf("Farenheit = %.0f",farenheit);
+    scanf("%f",&celcius); // Taking input
+    farenheit = (celcius*1.8) + 32; //Calculation
+    printf("Farenheit = %.0f",farenheit); //Displaying the code
     return 0; 
 }
