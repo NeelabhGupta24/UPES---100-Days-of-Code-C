@@ -18,7 +18,6 @@ Output 3:
 Positive
 
 */
-
 #include <stdio.h>
 int main(){
     int integer = 0;
@@ -27,13 +26,12 @@ int main(){
     if(integer!=0){
         if (integer>0){
             printf("Positive\n");
-        }
-        else{
+        } else {
             printf("Negative\n");
         }
-    }
-    else{
+    } else {
         printf("Zero\n");
     }
+    
     return 0;
 }
