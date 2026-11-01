@@ -13,15 +13,16 @@ Output 2:
 Area=28.27, Circumference=18.85
 
 */
-
 #include <stdio.h>
 int main(){
-    const float PI = 3.14;
+    const float PI = 3.14; //Declaring PI
     float radius,area,circumference;
     printf("Enter the radius of the circle :");
-    scanf("%f",&radius);
+    scanf("%f",&radius); //Taking input of radius
+    //Calculating area and circumference
     area = PI*radius*radius;
     circumference = PI*radius*2;
-    printf("Area = %.2f, Circumference = %.2f\n",area,circumference); 
+    printf("Area = %.2f, Circumference = %.2f\n",area,circumference); //Displaying area and circumference
+    
     return 0;
 }
