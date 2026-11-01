@@ -13,17 +13,15 @@ Output 2:
 Area=21, Perimeter=20
 
 */
-
-// Answer 3
-
 #include <stdio.h>
-
 int main(){
-    int length,breadth,area,perimeter;
+    int length,breadth,area,perimeter; //Creating variables
     printf("Enter length and breadth of the rectangle :");
-    scanf("%d%d",&length,&breadth);
+    scanf("%d%d",&length,&breadth);//Taking input and storing length and breadth of the rectangle
+    //Calculating Area and perimeter
     area = length*breadth;
     perimeter = 2*(length+breadth);                                     
-    printf("Area = %d, Perimeter = %d\n",area,perimeter);
+    printf("Area = %d, Perimeter = %d\n",area,perimeter);//Displaying results
+    
     return 0;
 }
