@@ -13,7 +13,6 @@ Output 2:
 12 is even
 
 */
-
 #include <stdio.h>
 int main(){
     int integer = 0;
@@ -21,9 +20,9 @@ int main(){
     scanf("%d",&integer);
     if(integer%2==0){
         printf("%d is Even\n",integer);
-    }
-    else{
+    } else {
         printf("%d is odd\n",integer);
     }
+    
     return 0;
 }
