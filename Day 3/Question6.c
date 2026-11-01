@@ -13,16 +13,14 @@ Output 2:
 After swap: 1 -1
 
 */
-
 #include <stdio.h>
-
 int main(){
-    int firstNumber,secondNumber,temporaryNumber;
+    int firstNumber = 0,secondNumber = 0,temporaryNumber = 0; //Initializing Varaibles
     printf("Enter two numbers in order :");
-    scanf("%d%d",&firstNumber,&secondNumber);
-    temporaryNumber = secondNumber;
-    secondNumber = firstNumber;
+    scanf("%d%d",&firstNumber,&secondNumber); //Taking input
+    temporaryNumber = secondNumber; //Storing value of second nuber temporarily so that the value is not lost
+    secondNumber = firstNumber; // Switching values
     firstNumber = temporaryNumber;
-    printf("After Swap :%d %d",firstNumber,secondNumber);
+    printf("After Swap :%d %d",firstNumber,secondNumber); // Displaying result
     return 0;
 }
