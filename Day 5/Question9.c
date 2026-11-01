@@ -15,9 +15,9 @@ Simple Interest=1050, Compound Interest=1125.76
 */
 #include <stdio.h>
 #include <math.h>
-
 int main(){
-    double principal,rate,time = 0.00;
+    double principal = 0.00,rate = 0.00,time = 0.00;
+    //Taking inputs
     printf("Enter Principal >"); 
     scanf("%lf",&principal);
     printf("Enter Interest Rate in percentage (per year)>");
@@ -25,8 +25,10 @@ int main(){
     rate = rate/100;
     printf("Enter total duration of payment (in years) >");
     scanf("%lf",&time);
+    //Calculation
     double compound = principal*(pow((1+(rate)),time)) - principal;
     double simple = rate*principal*time;
+    //Displaying results
     printf("Compound interest = %.2lf , Simple Interest = %.2lf\n",compound,simple);
     return 0;
 
