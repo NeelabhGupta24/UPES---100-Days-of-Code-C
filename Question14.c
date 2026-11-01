@@ -13,9 +13,7 @@ Output 2:
 Consonant
 
 */
-
 #include <stdio.h>
-
 int main(){
     bool flag = false;
     char ch = '\0';
@@ -25,12 +23,12 @@ int main(){
     for (int i = 0; i < 10 ; i++){
         if(ch==vowel[i]){
             flag = true;
+            break;
         }
     }
     if(flag){
         printf("Vowel");
-    }
-    else{
+    } else{
         printf("Consonant");
     }
 
