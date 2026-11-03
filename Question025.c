@@ -46,9 +46,9 @@ int main() {
         result = first_number/second_number;
         printf("%lf\n",result);
         break;
-    // case '%%':
-    //     result = first_number%second_number;
-    //     printf("%lf\n",result)
+    case '%':
+         result = (int)first_number%(int)second_number;
+         printf("%lf\n",result);
     default:
         printf("Enter a valid Operator\n");
         break;
