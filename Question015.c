@@ -24,21 +24,17 @@ Special character
 
 */
 #include <stdio.h>
-
 int main(){
     char input = '\0';
     printf("Input a character :");
     scanf(" %c",&input);
     if(input>='A' && input<='Z'){
         printf("Uppercase alphabet\n");
-    }
-    else if(input>='a' && input<='z'){
+    } else if(input>='a' && input<='z'){
         printf("Lowercase alphabet\n");
-    }
-    else if(input>='0' && input<='9'){
+    } else if(input>='0' && input<='9'){
         printf("Digit\n");
-    }
-    else{
+    } else{
         printf("Special character\n");
     }
     return 0;
