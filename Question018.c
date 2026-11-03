@@ -28,7 +28,6 @@ Output 4:
 Grade F
 
 */
-
 #include <stdio.h>
 int main(){
     int percentage = 0;
