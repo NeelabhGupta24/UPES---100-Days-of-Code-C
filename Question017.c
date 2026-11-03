@@ -21,21 +21,19 @@ Roots are complex
 #include <stdio.h>
 #include <math.h>
 int main(){
-    double a,b,c,first_root,second_root = 0;
+    double a = 0,b = 0,c = 0,first_root = 0,second_root = 0;
     printf("Enter a, b, c in order : ");
     scanf("%lf%lf%lf",&a,&b,&c);
-    double D = pow(b,2) - (4*a*c);
-    if (D>=0){
-        double first_root = (-b + pow(D,1.0/2))/(2*a);
-        double second_root = (-b - pow(D,1.0/2))/(2*a);
+    double D = pow(b,2) - (4*a*c); //Finding discriminant
+    if (D>=0){ //Two real roots
+        double first_root = (-b + pow(D,1.0/2))/(2*a); //Positive root
+        double second_root = (-b - pow(D,1.0/2))/(2*a); //Negative root
         if(first_root==second_root){
-            printf("Real and same roots, %.2lf\n",first_root);
-        }
-        else{
+            printf("Real and same roots, %.2lf\n",first_root); //Equal roots
+        } else{
             printf("Real and different roots, %.2lf %.2lf\n",first_root,second_root);
         }
-    }
-    else{
+    } else{
         printf("Unreal roots\n");
     }
     return 0;
