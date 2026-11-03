@@ -18,13 +18,11 @@ int main(){
     int first_number,second_number,third_number = 0;
     printf("Input three numbers : ");
     scanf("%d%d%d",&first_number,&second_number,&third_number);
-    if(first_number>second_number && third_number<first_number){
-        printf("Largest is%d",first_number);
-    }
-    else if(first_number<second_number && third_number<second_number){
+    if(first_number>=second_number && third_number<=first_number){
+        printf("Largest is %d",first_number);
+    } else if(first_number<=second_number && third_number<=second_number){
         printf("Largest is %d",second_number);
-    }
-    if(third_number>second_number && third_number>first_number){
+    }else{
         printf("Largest is %d",third_number);
     }
     return 0;
